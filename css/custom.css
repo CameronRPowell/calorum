@@ -1,0 +1,75 @@
+:root {
+    --theme-page-bg-image-base: url(../images/background_texture.png);
+    --theme-quote-border: url(https://media-waterdeep.cursecdn.com/attachments/7/654/border_texture_wide.png);
+    --theme-table-row-bg-light: #f8edf8;
+    --theme-table-row-bg-dark: #f0e1f0;
+    --theme-table-row-bg-hover: #ecd0ee;
+    --compendium-rules-sidebar-color: #d9c2db;
+    /* --compendium-quote-box-color: #EED5CE;
+    --compendium-quote-box-border: #815660;
+    --compendium-quote-box-corner: #60313d; */
+    --header-underline: #dd2fb4;
+    --compendium-sidebar-tier-2: #e400941b; /* TODO */
+    --compendium-sidebar-tier-3: #ff005919;
+    --compendium-sidebar-tier-4: #6f008814;
+    --compendium-sidebar-tier-5: #58008814; /* TODO */
+    --nav-to-top-bg: #55004e;
+    --nav-to-top-hover-bg: #43003d;
+}
+
+.top-nav {
+    background-image: linear-gradient(to right, #55004e, #190117 40%, #190117 60%, #55004e);
+    text-align: center;
+}
+
+.quick-menu-item-label:hover {
+    border-left-color: #dd2fb4;
+}
+
+.quick-menu-item .quick-menu-item-link:hover {
+    color: #a11480;
+}
+
+.quick-menu-item-active>.quick-menu-item-label {
+    border-left-color: #dd2fb4;
+}
+
+.body-page .p-article-a .p-article-content a:not(.tooltip-hover, .ddb-lightbox-outer) {
+    color: #006ABE;
+  }
+  .body-page .p-article-a .p-article-content :is(.text--rules-sidebar, .table-compendium) a:not(.tooltip-hover) {
+    color: #0053A3 !important;
+  }
+  
+  .body-page .p-article-a .p-article-content .tooltip-hover:is(.condition-tooltip, .sense-tooltip, .skill-tooltip, .action-tooltip, .weapon-properties-tooltip) {
+    color: #11884C !important;
+  }
+  .body-page .p-article-a .p-article-content .tooltip-hover.rule-tooltip {
+    color: #9B740B !important;
+  }
+  .body-page .p-article-a .p-article-content .tooltip-hover.item-tooltip {
+    color: #774521 !important;
+  }
+  .body-page .p-article-a .p-article-content :is(.table-compendium, .text--rules-sidebar) .tooltip-hover:is(.condition-tooltip, .sense-tooltip, .skill-tooltip, .action-tooltip, .weapon-properties-tooltip) {
+    color: #1f7348 !important;
+  }
+  .body-page .p-article-a .p-article-content :is(.table-compendium, .text--rules-sidebar) .tooltip-hover.rule-tooltip {
+    color: #7a5900 !important;
+  }
+  
+  .waterdeep-tooltip .tooltip-header-identifier-condition, .waterdeep-tooltip .tooltip-header-identifier-sense, .waterdeep-tooltip .tooltip-header-identifier-skill, .waterdeep-tooltip .tooltip-header-identifier-action, .waterdeep-tooltip .tooltip-header-identifier-wprop {
+    background-color: #11884C;
+    border-color: #1ce37f;
+  }
+  .waterdeep-tooltip .tooltip-header-identifier-gear, .waterdeep-tooltip .tooltip-header-identifier-armor, .waterdeep-tooltip .tooltip-header-identifier-weapon {
+    background-color: #774521;
+    border-color: #c77337;
+  }
+  .waterdeep-tooltip .tooltip-header-identifier-rule {
+    background-color: #9B740B;
+    border-color: #efb61d;
+  }
+  
+  .body-page .p-article-a .p-article-content table.table-compendium td p + p {
+    margin-top: 12px;
+  }
